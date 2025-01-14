@@ -14,7 +14,7 @@
         }
 
         table {
-            width: 80%;
+            width: 100%;
             margin: auto;
             border-collapse: collapse;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -38,6 +38,8 @@
             width: 20%;
             vertical-align: top;
             background-color: #f1f1f1;
+            padding: 15px;
+            box-sizing: border-box;
         }
 
         .menu ul {
@@ -63,6 +65,7 @@
             width: 60%;
             text-align: left;
             padding: 20px;
+            box-sizing: border-box;
         }
 
         .content h3 {
@@ -81,11 +84,14 @@
             background-color: #f9f9f9;
             text-align: center;
             padding-top: 10px;
+            box-sizing: border-box;
         }
 
         .sidebar img {
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 150px;
         }
 
         .data-table {
@@ -108,18 +114,20 @@
         /* Responsiveness for small screens */
         @media (max-width: 768px) {
             table {
-                width: 95%;
+                width: 100%;
             }
 
             .menu {
                 width: 100%;
                 padding: 10px;
                 text-align: left;
+                margin-bottom: 20px;
             }
 
             .content {
                 width: 100%;
                 padding: 10px;
+                margin-bottom: 20px;
             }
 
             .sidebar {
@@ -129,14 +137,34 @@
                 text-align: center;
             }
 
-            .sidebar img {
-                width: 100%;
-                max-width: 300px;
-            }
-
             .footer {
                 font-size: 0.9em;
                 padding: 15px;
+                text-align: center;
+            }
+
+            .sidebar img {
+                max-width: 100%;
+            }
+        }
+
+        /* Further responsiveness for even smaller screens */
+        @media (max-width: 480px) {
+            .header, .footer {
+                font-size: 1em;
+                padding: 10px;
+            }
+
+            .menu li a {
+                padding: 8px;
+            }
+
+            .content h3 {
+                font-size: 1.4em;
+            }
+
+            .content p {
+                font-size: 0.9em;
             }
         }
 
@@ -181,7 +209,7 @@
             </table>
         </td>
         <td class="sidebar">
-            <img src="1.jpg" width="150px" alt="Gambar Galeri">
+            <img src="1.jpg" alt="Gambar Galeri">
         </td>
     </tr>
     <tr class="footer">
