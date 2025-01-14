@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        /* Pengaturan Umum */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Table Layout */
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Header dan Footer */
+        .header, .footer {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* Menu */
+        .menu {
+            width: 20%;
+            vertical-align: top;
+            background-color: #f1f1f1;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: #4CAF50;
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold;
+        }
+
+        .menu li a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Konten Utama */
+        .content {
+            width: 60%;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .content h3 {
+            font-size: 1.6em;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 20%;
+            background-color: #f9f9f9;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .sidebar img {
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Tabel Data Mahasiswa */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        .data-table th, .data-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .data-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <tr class="header">
+        <th colspan="3">Selamat Datang di Kampus Biru</th>
+    </tr>
+    <tr>
+        <td class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="kursus.html">Kursus</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </td>
+        <td class="content">
+            <h3>Data Mahasiswa</h3>
+            <p>Berikut adalah daftar mahasiswa yang terdaftar di Kampus Biru.</p>
+            <table class="data-table">
+                <tr>
+                    <th>Nama</th>
+                    <th>NIM</th>
+                </tr>
+                <tr>
+                    <td>Deny Ramadhani</td>
+                    <td>2023511029</td>
+                </tr>
+                <tr>
+                    <td>Nurhidayah Halik</td>
+                    <td>2023102017</td>
+                </tr>
+                <tr>
+                    <td>Chimma</td>
+                    <td>2023102015</td>
+                </tr>
+            </table>
+        </td>
+        <td class="sidebar">
+            <img src="deni.jpg" width="150px" alt="Gambar Galeri">
+            <p>Gambar Galeri</p>
+        </td>
+    </tr>
+    <tr class="footer">
+        <td colspan="3">
+            Hak Cipta © 2024 Deni Ramadhani | <a href="kontak.html" style="color: white; text-decoration: none;">Hubungi Kami</a>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
